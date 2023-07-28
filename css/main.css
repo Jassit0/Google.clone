@@ -1,0 +1,215 @@
+/*usualmente siempre se empieza con un body*/
+body{
+    /*margin---para eliminar el margen de los elementos*/
+    margin: 0;
+    /*padding---margen pa dentro*/
+    padding: 0;
+    /*font-size---tamaño de texto*/
+    font-size: 13px;
+    /*font-family--fuente de texto*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**********************************************/
+/****************************************/
+/*****************************/
+/*NAVEGACIÓN*/
+
+header{
+    /*ancho*/
+    width: 100%;
+    /*alto*/
+    height: 55px;
+}
+
+/*header nav para decir qué y donde quiero editar*/
+header nav{
+    /*display---me permite mover mi elemento de diferentes formas*/
+    /*flex---porque el elemento va a ser flexible*/
+    display: flex;
+    /*justify-content---me permite justificar a los elementos, es decir, moverlo a la derecha, izquierda o al centro, es decir, marca hacia donde se va a mover el elemento*/
+    /*flex-end para que los alinie a la parte derecha*/
+    justify-content: flex-end ;
+}
+
+header nav .nav-right-section{
+    /*list-style---para eliminar las viñetas de la lista*/
+    list-style: none;
+    /*ancho*/
+    width: 250px;
+    display: flex; 
+    /*justify-content----define cómo el navegador distribuye el espacio entre y alrededor de los items flex,a lo largo del eje principal de su contenedor*/
+    justify-content: center;
+    align-items: center;
+    /*altura de la lista, ponemos auto para que se defina con base en el tamaño de los elementos*/
+    height: auto;
+}
+
+nav .nav-right-section a{
+    /*color de texto*/
+    color: rgb(21, 21, 21);
+    /*línea debajo de*/
+    text-decoration: none;
+    /*margen derecho*/
+    margin-right: 15px;
+}
+
+nav .nav-right-section .menu{
+    /*background-image----establece una o más imagenes de fondo en un elemento*/
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 22px;
+    height: 22px;
+    /*background-size: contain, practicamente dice que si un ícono está dentro de equis caja, entonces va a adecuar el tamaño del ícono al tamaño de la caja*/
+    background-size: contain;
+    margin-left: 10px;
+}
+
+nav .nav-right-section img{
+    /*margin-left----margen a la izquierda*/
+    margin-left: 20px;
+    border-radius: 100%;
+}
+
+
+/*****************SESION 7************************/
+/**********************************************/
+/****************************************/
+/*****************************/
+/*MAIN*/
+
+
+main{
+    text-align: center;
+    margin-top: 150px;
+}
+
+/*sección logo*/
+main .main-logo{
+    width: 500px;
+    /*se edita la parte vertical, pero la horizontal la pone automatica*/
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/*sección Google*/
+main .main-logo img{
+    height: 95px;
+}
+
+/*sección input (caja de texto)*/
+main .main-input{
+    width: 550px;
+    margin: 0 auto;
+    /*separar input de botones*/
+    margin-bottom: 40px;
+}
+
+
+/*cajita gris redondeada buscador*/
+main .main-input-container{
+    /*border--- permite definir en una única regla todos los bordes de los elementos seleccionados*/
+    /*primero es el ancho de la línea, el estilo y por último el color */
+    border: 2px solid #dfe1e5;
+    border-radius: 30px;
+    width: 525px;
+    /*Para poder mover los elementos*/
+    display: flex;
+    /*Mover al centro*/
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    height: 40px;
+    width: 430px;
+    /*es para quitar borde negro */
+    border: none;
+    /*es para quitar borde azul al hacer click*/
+    outline: none;
+}
+
+main .main-input .search-icon{
+    /*Poner imagen de lupa*/
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+
+
+/*********************SESION 8*************/
+/*********************************/
+
+
+main .main-input .micro-icon{
+    /*Poner imagen de microfono*/
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 17px;
+    height: 17px;
+    /*Quiere decir que es un ícono que está contenido en mi cajita*/
+    background-size: contain;   
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat
+}
+
+main .main-input .cam-icon{
+    /*Poner imagen de camara*/
+    background-image: url(https://media.discordapp.net/attachments/1125470171595812975/1130918976260690031/icono_cam1.png?width=409&height=406);
+    background-position: center;
+    width: 17px;
+    height: 17px;
+    background-size: contain;   
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 6%;
+}
+
+
+/*editar los botones de buscar con google y voy a tener suerte*/
+main .main-buttons{
+    width: 550px;
+    /*margin 0 auto, es un equilibrio entre la izquierda y la derecha*/
+    /*vertical / horizontal*/
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /*alinear elementos en la misma línea*/
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+}
+
+/*Nos permite agregarle diseño al poner cursor sobre el elemento*/
+main .main-input-container :hover{
+    box-shadow: 1px 1px 5px #20212447;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    /*ancho de linea -- estilo de linea -- color*/
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 1);
+}
+
+footer .footer-left{
+    list-style: none;
+
+}
+
+footer .footer-right{
+    list-style: none;
+}
