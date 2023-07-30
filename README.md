@@ -9,3 +9,6 @@ First I worked in HTML to add all the necessary elements, such as images, button
 
 ## Objetive of the project
 Make a clone of the Google home page using the HTML and CSS code languages.
+
+### Credits
+#### Created with the support of mentor Miranda Jaramillo (Tecnolochicas MX 2023 )
