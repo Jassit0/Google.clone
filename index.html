@@ -99,9 +99,12 @@
 
 
 <footer>
+
+
+<!--elementos de la izquierda-->
     <ul class="footer-left">
          <!--Sobre Google-->
-        <li>
+         <li>
             <a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
         </li>
         <!--Publicidad-->
@@ -119,6 +122,8 @@
 
     </ul>
 
+
+<!--elementos de la derecha-->
     <ul class="footer-right">
         <!--Privacidad-->
         <li>
@@ -130,11 +135,24 @@
         </li>
         <!--Preferencias-->
         <li>
-            <a href="">Preferencias</a>
+            <!--sección---sirve para determinar qué contenido corresponde a qué parte del esquema-->
+            <section>
+                <div class="dropdown">
+                    <button>Preferencias</button>
+                    <div class="dropdown-content">
+                        <a href="https://www.google.com/preferences?hl=es-MX&fg=1">Configuración de búsqueda</a>
+                        <a href="https://www.google.com/advanced_search?hl=es-MX&fg=1/">Búsqueda avanzada</a>
+                        <a href="https://myaccount.google.com/yourdata/search?utm_source=googlemenu&fg=1&pli=1">Tus datos en la búsqueda</a>
+                        <a href="https://myactivity.google.com/product/search?utm_source=google&hl=es-MX&fg=1">Historial de búsqueda</a>
+                        <a href="https://support.google.com/websearch/?visit_id=638253820557250456-2168924705&hl=es-MX&rd=2#topic=3378866">Buscar en Ayuda</a>
+                        <a href="">Enviar Comentarios</a>
+                        <a href="">Tema oscuro:Desactivado</a>
+                    </div>
+                </div>
+            </section>
         </li>
 
     </ul>
-    
 
 </footer>
 
